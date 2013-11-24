@@ -1,0 +1,468 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F15725DD1841C7F50000336C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F15725DC1841C7F50000336C /* Foundation.framework */; };
+		F15725DF1841C7F50000336C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F15725DE1841C7F50000336C /* CoreGraphics.framework */; };
+		F15725E11841C7F50000336C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F15725E01841C7F50000336C /* UIKit.framework */; };
+		F15725E71841C7F50000336C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F15725E51841C7F50000336C /* InfoPlist.strings */; };
+		F15725E91841C7F50000336C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F15725E81841C7F50000336C /* main.m */; };
+		F15725ED1841C7F50000336C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F15725EC1841C7F50000336C /* AppDelegate.m */; };
+		F15725EF1841C7F50000336C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F15725EE1841C7F50000336C /* Images.xcassets */; };
+		F15725F61841C7F50000336C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F15725F51841C7F50000336C /* XCTest.framework */; };
+		F15725F71841C7F50000336C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F15725DC1841C7F50000336C /* Foundation.framework */; };
+		F15725F81841C7F50000336C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F15725E01841C7F50000336C /* UIKit.framework */; };
+		F15726001841C7F50000336C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F15725FE1841C7F50000336C /* InfoPlist.strings */; };
+		F15726021841C7F50000336C /* RFMathTextFieldDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F15726011841C7F50000336C /* RFMathTextFieldDemoTests.m */; };
+		F157260F1841C8470000336C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F157260C1841C8470000336C /* ViewController.m */; };
+		F15726101841C8470000336C /* RFMathTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F157260E1841C8470000336C /* RFMathTextField.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F15725F91841C7F50000336C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F15725D11841C7F50000336C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F15725D81841C7F50000336C;
+			remoteInfo = RFMathTextFieldDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F15725D91841C7F50000336C /* RFMathTextFieldDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RFMathTextFieldDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F15725DC1841C7F50000336C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F15725DE1841C7F50000336C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F15725E01841C7F50000336C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F15725E41841C7F50000336C /* RFMathTextFieldDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RFMathTextFieldDemo-Info.plist"; sourceTree = "<group>"; };
+		F15725E61841C7F50000336C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F15725E81841C7F50000336C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F15725EA1841C7F50000336C /* RFMathTextFieldDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RFMathTextFieldDemo-Prefix.pch"; sourceTree = "<group>"; };
+		F15725EB1841C7F50000336C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F15725EC1841C7F50000336C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F15725EE1841C7F50000336C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F15725F41841C7F50000336C /* RFMathTextFieldDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RFMathTextFieldDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F15725F51841C7F50000336C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F15725FD1841C7F50000336C /* RFMathTextFieldDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RFMathTextFieldDemoTests-Info.plist"; sourceTree = "<group>"; };
+		F15725FF1841C7F50000336C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F15726011841C7F50000336C /* RFMathTextFieldDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RFMathTextFieldDemoTests.m; sourceTree = "<group>"; };
+		F157260B1841C8470000336C /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F157260C1841C8470000336C /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F157260D1841C8470000336C /* RFMathTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFMathTextField.h; sourceTree = "<group>"; };
+		F157260E1841C8470000336C /* RFMathTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFMathTextField.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F15725D61841C7F50000336C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F15725DF1841C7F50000336C /* CoreGraphics.framework in Frameworks */,
+				F15725E11841C7F50000336C /* UIKit.framework in Frameworks */,
+				F15725DD1841C7F50000336C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F15725F11841C7F50000336C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F15725F61841C7F50000336C /* XCTest.framework in Frameworks */,
+				F15725F81841C7F50000336C /* UIKit.framework in Frameworks */,
+				F15725F71841C7F50000336C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F15725D01841C7F50000336C = {
+			isa = PBXGroup;
+			children = (
+				F15725E21841C7F50000336C /* RFMathTextFieldDemo */,
+				F15725FB1841C7F50000336C /* RFMathTextFieldDemoTests */,
+				F15725DB1841C7F50000336C /* Frameworks */,
+				F15725DA1841C7F50000336C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F15725DA1841C7F50000336C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F15725D91841C7F50000336C /* RFMathTextFieldDemo.app */,
+				F15725F41841C7F50000336C /* RFMathTextFieldDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F15725DB1841C7F50000336C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F15725DC1841C7F50000336C /* Foundation.framework */,
+				F15725DE1841C7F50000336C /* CoreGraphics.framework */,
+				F15725E01841C7F50000336C /* UIKit.framework */,
+				F15725F51841C7F50000336C /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F15725E21841C7F50000336C /* RFMathTextFieldDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F15725EB1841C7F50000336C /* AppDelegate.h */,
+				F15725EC1841C7F50000336C /* AppDelegate.m */,
+				F157260B1841C8470000336C /* ViewController.h */,
+				F157260C1841C8470000336C /* ViewController.m */,
+				F157260D1841C8470000336C /* RFMathTextField.h */,
+				F157260E1841C8470000336C /* RFMathTextField.m */,
+				F15725EE1841C7F50000336C /* Images.xcassets */,
+				F15725E31841C7F50000336C /* Supporting Files */,
+			);
+			path = RFMathTextFieldDemo;
+			sourceTree = "<group>";
+		};
+		F15725E31841C7F50000336C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F15725E41841C7F50000336C /* RFMathTextFieldDemo-Info.plist */,
+				F15725E51841C7F50000336C /* InfoPlist.strings */,
+				F15725E81841C7F50000336C /* main.m */,
+				F15725EA1841C7F50000336C /* RFMathTextFieldDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F15725FB1841C7F50000336C /* RFMathTextFieldDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				F15726011841C7F50000336C /* RFMathTextFieldDemoTests.m */,
+				F15725FC1841C7F50000336C /* Supporting Files */,
+			);
+			path = RFMathTextFieldDemoTests;
+			sourceTree = "<group>";
+		};
+		F15725FC1841C7F50000336C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F15725FD1841C7F50000336C /* RFMathTextFieldDemoTests-Info.plist */,
+				F15725FE1841C7F50000336C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F15725D81841C7F50000336C /* RFMathTextFieldDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F15726051841C7F50000336C /* Build configuration list for PBXNativeTarget "RFMathTextFieldDemo" */;
+			buildPhases = (
+				F15725D51841C7F50000336C /* Sources */,
+				F15725D61841C7F50000336C /* Frameworks */,
+				F15725D71841C7F50000336C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RFMathTextFieldDemo;
+			productName = RFMathTextFieldDemo;
+			productReference = F15725D91841C7F50000336C /* RFMathTextFieldDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F15725F31841C7F50000336C /* RFMathTextFieldDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F15726081841C7F50000336C /* Build configuration list for PBXNativeTarget "RFMathTextFieldDemoTests" */;
+			buildPhases = (
+				F15725F01841C7F50000336C /* Sources */,
+				F15725F11841C7F50000336C /* Frameworks */,
+				F15725F21841C7F50000336C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F15725FA1841C7F50000336C /* PBXTargetDependency */,
+			);
+			name = RFMathTextFieldDemoTests;
+			productName = RFMathTextFieldDemoTests;
+			productReference = F15725F41841C7F50000336C /* RFMathTextFieldDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F15725D11841C7F50000336C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Rex Finn";
+				TargetAttributes = {
+					F15725F31841C7F50000336C = {
+						TestTargetID = F15725D81841C7F50000336C;
+					};
+				};
+			};
+			buildConfigurationList = F15725D41841C7F50000336C /* Build configuration list for PBXProject "RFMathTextFieldDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F15725D01841C7F50000336C;
+			productRefGroup = F15725DA1841C7F50000336C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F15725D81841C7F50000336C /* RFMathTextFieldDemo */,
+				F15725F31841C7F50000336C /* RFMathTextFieldDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F15725D71841C7F50000336C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F15725E71841C7F50000336C /* InfoPlist.strings in Resources */,
+				F15725EF1841C7F50000336C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F15725F21841C7F50000336C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F15726001841C7F50000336C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F15725D51841C7F50000336C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F157260F1841C8470000336C /* ViewController.m in Sources */,
+				F15725ED1841C7F50000336C /* AppDelegate.m in Sources */,
+				F15725E91841C7F50000336C /* main.m in Sources */,
+				F15726101841C8470000336C /* RFMathTextField.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F15725F01841C7F50000336C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F15726021841C7F50000336C /* RFMathTextFieldDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F15725FA1841C7F50000336C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F15725D81841C7F50000336C /* RFMathTextFieldDemo */;
+			targetProxy = F15725F91841C7F50000336C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F15725E51841C7F50000336C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F15725E61841C7F50000336C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F15725FE1841C7F50000336C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F15725FF1841C7F50000336C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F15726031841C7F50000336C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F15726041841C7F50000336C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F15726061841C7F50000336C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RFMathTextFieldDemo/RFMathTextFieldDemo-Prefix.pch";
+				INFOPLIST_FILE = "RFMathTextFieldDemo/RFMathTextFieldDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F15726071841C7F50000336C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RFMathTextFieldDemo/RFMathTextFieldDemo-Prefix.pch";
+				INFOPLIST_FILE = "RFMathTextFieldDemo/RFMathTextFieldDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F15726091841C7F50000336C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RFMathTextFieldDemo.app/RFMathTextFieldDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RFMathTextFieldDemo/RFMathTextFieldDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RFMathTextFieldDemoTests/RFMathTextFieldDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F157260A1841C7F50000336C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RFMathTextFieldDemo.app/RFMathTextFieldDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RFMathTextFieldDemo/RFMathTextFieldDemo-Prefix.pch";
+				INFOPLIST_FILE = "RFMathTextFieldDemoTests/RFMathTextFieldDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F15725D41841C7F50000336C /* Build configuration list for PBXProject "RFMathTextFieldDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F15726031841C7F50000336C /* Debug */,
+				F15726041841C7F50000336C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F15726051841C7F50000336C /* Build configuration list for PBXNativeTarget "RFMathTextFieldDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F15726061841C7F50000336C /* Debug */,
+				F15726071841C7F50000336C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F15726081841C7F50000336C /* Build configuration list for PBXNativeTarget "RFMathTextFieldDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F15726091841C7F50000336C /* Debug */,
+				F157260A1841C7F50000336C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F15725D11841C7F50000336C /* Project object */;
+}

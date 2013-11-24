@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>87BE316C-DA32-4841-9825-E11E325F5ED1</string>
+	<key>IDESourceControlProjectName</key>
+	<string>RFMathTextFieldDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>495444C5-1690-4C62-9F9F-1F5ECCE06C7B</key>
+		<string>https://github.com/rexfinn/RFMathTextField.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>RFMathTextFieldDemo/RFMathTextFieldDemo.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>495444C5-1690-4C62-9F9F-1F5ECCE06C7B</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/rexfinn/RFMathTextField.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>495444C5-1690-4C62-9F9F-1F5ECCE06C7B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>495444C5-1690-4C62-9F9F-1F5ECCE06C7B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>RFMathTextField</string>
+		</dict>
+	</array>
+</dict>
+</plist>
