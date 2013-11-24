@@ -3,6 +3,26 @@ RFMathTextField
 
 A simple validator/equation answerer.  Could be used to prevent spam (an extra form step) or prevent users from making stupid decisions at stupid times, when they are not thinking clearly, and can't do simple math.
 
+#Use
+
+RFMathTextField is very simple to install and use.  Just init the `RFMathTextField` with or without a notification.
+
+```objc
+RFMathTextField *textField = [[RFMathTextField alloc] initWithFrame:CGRectMake(20, 100, self.view.bounds.size.width - 40, 31)
+                                           withEquation:RFMathTextFieldEquationTypeAddition 
+```
+
+That's really it, just add an observer if you're using notifications, so you can perform an action when the correct answer is input.
+
+You can also always grab the answer to the equation (`NSInteger equationAnswer`) or if the answer is correct (`BOOL answerCorrect`).
+
+Also, you can refresh the equation easily by calling
+```objc
+[textField refreshEquation]
+```
+
+Hope you enjoy it!
+
 #Screenshots
 
 ![Screenshot 1](http://i.imgur.com/cRZJ1cf.png) 
