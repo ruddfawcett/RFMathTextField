@@ -52,26 +52,52 @@
     self.textColor = [UIColor blackColor];
     self.userInteractionEnabled = YES;
     
-    int firstNumber = 0 + arc4random() % (10-0);
-    int secondNumber = 0 + arc4random() % (10-0);
+    int firstNumber;
+    int secondNumber;
     
     NSString *equation;
     
     switch (equationType) {
         case RFMathTextFieldEquationTypeAddition:
+            firstNumber = 0 + arc4random() % (10-0);
+            secondNumber = 0 + arc4random() % (10-0);
+            
             equation = [NSString stringWithFormat:@"%d + %d = ",firstNumber,secondNumber];
             _equationAnswer = firstNumber + secondNumber;
+            
+            [self setPlaceholder:equation];
+            break;
+        case RFMathTextFieldEquationTypeSubtraction:
+            secondNumber = 0 + arc4random() % (10-0); // Put second number of equation first
+            firstNumber = secondNumber + arc4random() % (10-secondNumber); // Set min of random to second number (no negatives)
+            
+            equation = [NSString stringWithFormat:@"%d - %d = ",firstNumber,secondNumber];
+            _equationAnswer = firstNumber - secondNumber;
+            
+            [self setPlaceholder:equation];
+            break;
+        case RFMathTextFieldEquationTypeMultiplication:
+            firstNumber = 0 + arc4random() % (10-0);
+            secondNumber = 0 + arc4random() % (10-0);
+            
+            equation = [NSString stringWithFormat:@"%d x %d = ",firstNumber,secondNumber];
+            _equationAnswer = firstNumber * secondNumber;
+            
+            [self setPlaceholder:equation];
+            break;
+        case RFMathTextFieldEquationTypeRandom:
+            {
+                RFMathTextFieldEquationTypes randomType = (RFMathTextFieldEquationTypes) (arc4random_uniform(RFMathTextFieldEquationTypeDivision));
+                NSLog(@"%ld",(long)randomType);
+                [self equationWithType:randomType];
+            }
             break;
             
-            // Other types will be added soon,
-            // Reminder: Make sure subtraction doesn't return a negative answer
-            // Reminder: No division by zero
+            //Division may or may not be added - need to account for remainders/decimals
             
         default:
             break;
     }
-    
-    [self setPlaceholder:equation];
 }
 
 -(void)refreshEquation {
@@ -92,11 +118,11 @@
         self.answerCorrect = YES;
         
         if (_notification) {[[NSNotificationCenter defaultCenter] postNotificationName:_notificationName object:self];
-            
+
         }
     }
     
     return YES;
 }
-
+    
 @end
