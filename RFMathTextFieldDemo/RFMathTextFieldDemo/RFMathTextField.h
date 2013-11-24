@@ -8,16 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RFMathTextField : UITextField <UITextFieldDelegate>
-
 enum {
     RFMathTextFieldEquationTypeAddition,
     RFMathTextFieldEquationTypeSubtraction,
     RFMathTextFieldEquationTypeMultiplication,
     RFMathTextFieldEquationTypeDivision,
-    RFMathTextFieldEquationTypeRandom
+    RFMathTextFieldEquationTypeRandom,
+    EnumTypeMax
 };
 typedef NSInteger RFMathTextFieldEquationTypes;
+
+@interface RFMathTextField : UITextField <UITextFieldDelegate>
 
 -(id)initWithFrame:(CGRect)frame withEquation:(RFMathTextFieldEquationTypes)equationType andNotification:(NSString*)notification;
 -(id)initWithFrame:(CGRect)frame withEquation:(RFMathTextFieldEquationTypes)equationType;

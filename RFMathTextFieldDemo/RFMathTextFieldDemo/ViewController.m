@@ -23,7 +23,7 @@
     NSString *notificationName = @"answerIsCorrect";
     
     _textField = [[RFMathTextField alloc] initWithFrame:CGRectMake(20, 100, self.view.bounds.size.width - 40, 31)
-                                           withEquation:RFMathTextFieldEquationTypeAddition andNotification:notificationName];
+                                           withEquation:RFMathTextFieldEquationTypeRandom andNotification:notificationName];
     _textField.borderStyle = UITextBorderStyleRoundedRect;
     
     [self.view addSubview:_textField];
