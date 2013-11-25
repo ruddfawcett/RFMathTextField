@@ -3,32 +3,60 @@ RFMathTextField
 
 A simple validator/equation answerer.  Could be used to prevent spam (an extra form step) or prevent users from making stupid decisions at stupid times, when they are not thinking clearly, and can't do simple math.
 
-#Use
+##Installation
 
-RFMathTextField is very simple to install and use.  Just init the `RFMathTextField` with or without a notification.
+### Installation with CocoaPods
 
-```objc
-RFMathTextField *textField = [[RFMathTextField alloc] initWithFrame:CGRectMake(20, 100, self.view.bounds.size.width - 40, 31)
+[CocoaPods](http://cocoapods.org) is a dependency manager for Objective-C, which automates and simplifies the process of using 3rd-party libraries like AFNetworking in your projects. See the ["Getting Started" guide for more information](https://github.com/AFNetworking/AFNetworking/wiki/Getting-Started-with-AFNetworking).
+
+#### Podfile
+
+```ruby
+platform :ios, '7.0'
+pod "AFNetworking", "~> 2.0"
+```
+
+### Installation without CocoaPods
+
+Just drag the RFMathTextField folder into your project and import it.
+
+```
+#import 'RFMathTextField.h'
+```
+
+## Use
+
+RFMathTextField is very simple to install and use.  Just init the `RFMathTextField` with or without a notification*, and choose from one of the 4 types (RFMathTextFieldEquationTypes) of equations:
+
+- `RFMathTextFieldEquationTypeAddition`
+- `RFMathTextFieldEquationTypeSubtraction`
+- `RFMathTextFieldEquationTypeMultiplication`
+- `RFMathTextFieldEquationTypeRandom`
+
+```objective-c
+RFMathTextField *textField = [[RFMathTextField alloc] initWithFrame:CGRectMake(20, 100, 180, 31)
                                            withEquation:RFMathTextFieldEquationTypeAddition 
 ```
+
+\* **If you initialize RFMathTextField with a notification, remmber to add an observer with the same name.**
 
 That's really it, just add an observer if you're using notifications, so you can perform an action when the correct answer is input.
 
 You can also always grab the answer to the equation (`NSInteger equationAnswer`) or if the answer is correct (`BOOL answerCorrect`).
 
 Also, you can refresh the equation easily by calling
-```objc
-[textField refreshEquation]
+```
+[textField refreshEquation];
 ```
 
 Hope you enjoy it!
 
-#Screenshots
+##Screenshots
 
 ![Screenshot 1](http://i.imgur.com/cRZJ1cf.png) 
 ![Screenshot 2](http://i.imgur.com/94S4q40.png)
 
-#License
+##License
 
 The MIT License (MIT)
 
