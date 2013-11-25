@@ -1,6 +1,6 @@
 //
 //  ViewController.h
-//  Math2ValidateDemo
+//  RFMathTextFieldDemo
 //
 //  Created by Rudd Fawcett on 11/23/13.
 //  Copyright (c) 2013 Rex Finn. All rights reserved.

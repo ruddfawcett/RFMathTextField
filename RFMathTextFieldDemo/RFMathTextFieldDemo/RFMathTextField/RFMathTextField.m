@@ -1,6 +1,6 @@
 //
 //  RFMathTextField.m
-//  Math2ValidateDemo
+//  RFMathTextFieldDemo
 //
 //  Created by Rex Finn on 11/23/13.
 //  Copyright (c) 2013 Rex Finn. All rights reserved.
@@ -10,10 +10,8 @@
 
 @interface RFMathTextField ()
 
-@property (nonatomic, readwrite) NSInteger equationAnswer;
 @property (nonatomic, readwrite) NSString *notificationName;
 @property (nonatomic, readwrite) RFMathTextFieldEquationTypes currentType;
-@property (nonatomic, readwrite) BOOL answerCorrect;
 @property (nonatomic, readwrite) BOOL notification;
 
 @end
@@ -59,36 +57,33 @@
     
     switch (equationType) {
         case RFMathTextFieldEquationTypeAddition:
-            firstNumber = 0 + arc4random() % (10-0);
-            secondNumber = 0 + arc4random() % (10-0);
+            firstNumber = arc4random_uniform(10);
+            secondNumber = arc4random_uniform(10);
             
-            equation = [NSString stringWithFormat:@"%d + %d = ",firstNumber,secondNumber];
-            _equationAnswer = firstNumber + secondNumber;
+            equation = [NSString stringWithFormat:@"%d + %d",firstNumber,secondNumber];
             
-            [self setPlaceholder:equation];
+            [self doMath:equation];
             break;
         case RFMathTextFieldEquationTypeSubtraction:
-            secondNumber = 0 + arc4random() % (10-0); // Put second number of equation first
-            firstNumber = secondNumber + arc4random() % (10-secondNumber); // Set min of random to second number (no negatives)
+            secondNumber = arc4random_uniform(10); // Put second number of equation first
+            firstNumber = secondNumber + arc4random_uniform(10-secondNumber);; // Set min of random to second number (no negatives)
             
-            equation = [NSString stringWithFormat:@"%d - %d = ",firstNumber,secondNumber];
-            _equationAnswer = firstNumber - secondNumber;
+            equation = [NSString stringWithFormat:@"%d - %d",firstNumber,secondNumber];
             
-            [self setPlaceholder:equation];
+            [self doMath:equation];
             break;
         case RFMathTextFieldEquationTypeMultiplication:
-            firstNumber = 0 + arc4random() % (10-0);
-            secondNumber = 0 + arc4random() % (10-0);
+            firstNumber = arc4random_uniform(10);
+            secondNumber = arc4random_uniform(10);
             
-            equation = [NSString stringWithFormat:@"%d x %d = ",firstNumber,secondNumber];
-            _equationAnswer = firstNumber * secondNumber;
+            equation = [NSString stringWithFormat:@"%d * %d",firstNumber,secondNumber];
             
-            [self setPlaceholder:equation];
+            [self doMath:equation];
             break;
         case RFMathTextFieldEquationTypeRandom:
             {
                 RFMathTextFieldEquationTypes randomType = (RFMathTextFieldEquationTypes) (arc4random_uniform(RFMathTextFieldEquationTypeDivision));
-                NSLog(@"%ld",(long)randomType);
+                
                 [self equationWithType:randomType];
             }
             break;
@@ -124,5 +119,10 @@
     
     return YES;
 }
-    
+
+-(void)doMath:(NSString*)equation {
+    _equationAnswer = [[[NSExpression expressionWithFormat:equation] expressionValueWithObject:nil context:nil] integerValue];
+    [self setPlaceholder:[equation stringByReplacingOccurrencesOfString:@"*" withString:@"x"]];
+}
+
 @end
