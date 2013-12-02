@@ -20,7 +20,7 @@
 		F15726001841C7F50000336C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F15725FE1841C7F50000336C /* InfoPlist.strings */; };
 		F15726021841C7F50000336C /* RFMathTextFieldDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F15726011841C7F50000336C /* RFMathTextFieldDemoTests.m */; };
 		F157260F1841C8470000336C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F157260C1841C8470000336C /* ViewController.m */; };
-		F1592A901842EFDE00C6A80E /* RFMathTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F1592A8F1842EFDE00C6A80E /* RFMathTextField.m */; };
+		F1875E82184C30DD00678317 /* RFMathTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F1875E81184C30DD00678317 /* RFMathTextField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +52,8 @@
 		F15726011841C7F50000336C /* RFMathTextFieldDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RFMathTextFieldDemoTests.m; sourceTree = "<group>"; };
 		F157260B1841C8470000336C /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		F157260C1841C8470000336C /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		F1592A8E1842EFDE00C6A80E /* RFMathTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFMathTextField.h; sourceTree = "<group>"; };
-		F1592A8F1842EFDE00C6A80E /* RFMathTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFMathTextField.m; sourceTree = "<group>"; };
+		F1875E80184C30DD00678317 /* RFMathTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFMathTextField.h; sourceTree = "<group>"; };
+		F1875E81184C30DD00678317 /* RFMathTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFMathTextField.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,8 +117,8 @@
 				F15725EC1841C7F50000336C /* AppDelegate.m */,
 				F157260B1841C8470000336C /* ViewController.h */,
 				F157260C1841C8470000336C /* ViewController.m */,
-				F1592A8D1842EFDE00C6A80E /* RFMathTextField */,
 				F15725EE1841C7F50000336C /* Images.xcassets */,
+				F1875E7F184C30DD00678317 /* RFMathTextField */,
 				F15725E31841C7F50000336C /* Supporting Files */,
 			);
 			path = RFMathTextFieldDemo;
@@ -153,13 +153,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		F1592A8D1842EFDE00C6A80E /* RFMathTextField */ = {
+		F1875E7F184C30DD00678317 /* RFMathTextField */ = {
 			isa = PBXGroup;
 			children = (
-				F1592A8E1842EFDE00C6A80E /* RFMathTextField.h */,
-				F1592A8F1842EFDE00C6A80E /* RFMathTextField.m */,
+				F1875E80184C30DD00678317 /* RFMathTextField.h */,
+				F1875E81184C30DD00678317 /* RFMathTextField.m */,
 			);
-			path = RFMathTextField;
+			name = RFMathTextField;
+			path = ../../RFMathTextField;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +261,7 @@
 				F157260F1841C8470000336C /* ViewController.m in Sources */,
 				F15725ED1841C7F50000336C /* AppDelegate.m in Sources */,
 				F15725E91841C7F50000336C /* main.m in Sources */,
-				F1592A901842EFDE00C6A80E /* RFMathTextField.m in Sources */,
+				F1875E82184C30DD00678317 /* RFMathTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

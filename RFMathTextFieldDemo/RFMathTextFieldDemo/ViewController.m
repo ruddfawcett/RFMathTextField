@@ -2,7 +2,7 @@
 //  ViewController.m
 //  RFMathTextFieldDemo
 //
-//  Created by Rudd Fawcett on 11/23/13.
+//  Created by Rex Finn on 11/23/13.
 //  Copyright (c) 2013 Rex Finn. All rights reserved.
 //
 
@@ -63,7 +63,7 @@
 }
 
 -(IBAction)revealAnswer:(id)sender {
-    _answerLabel.text = [NSString stringWithFormat:@"Equation Answer: %d",[_textField equationAnswer]];
+    _answerLabel.text = [NSString stringWithFormat:@"Equation Answer: %ld",(long)[_textField equationAnswer]];
 }
 
 -(IBAction)handleNotification:(id)sender {

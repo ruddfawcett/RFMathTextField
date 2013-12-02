@@ -2,7 +2,7 @@
 //  RFMathTextFieldDemoTests.m
 //  RFMathTextFieldDemoTests
 //
-//  Created by Rudd Fawcett on 11/24/13.
+//  Created by Rex Finn on 11/24/13.
 //  Copyright (c) 2013 Rex Finn. All rights reserved.
 //
 
