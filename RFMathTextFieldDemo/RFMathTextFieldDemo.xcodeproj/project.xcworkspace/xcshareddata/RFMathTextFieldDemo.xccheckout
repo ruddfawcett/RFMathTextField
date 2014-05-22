@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>87BE316C-DA32-4841-9825-E11E325F5ED1</string>
+	<string>10B23135-30FA-4C1A-B730-3455AF674E71</string>
 	<key>IDESourceControlProjectName</key>
 	<string>RFMathTextFieldDemo</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>495444C5-1690-4C62-9F9F-1F5ECCE06C7B</key>
-		<string>https://github.com/rexfinn/RFMathTextField.git</string>
+		<key>0370B374-A62C-4153-9B26-0E91439E508E</key>
+		<string>https://github.com/ruddfawcett/RFMathTextField</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>RFMathTextFieldDemo/RFMathTextFieldDemo.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>495444C5-1690-4C62-9F9F-1F5ECCE06C7B</key>
+		<key>0370B374-A62C-4153-9B26-0E91439E508E</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/rexfinn/RFMathTextField.git</string>
+	<string>https://github.com/ruddfawcett/RFMathTextField</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>495444C5-1690-4C62-9F9F-1F5ECCE06C7B</string>
+	<string>0370B374-A62C-4153-9B26-0E91439E508E</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>495444C5-1690-4C62-9F9F-1F5ECCE06C7B</string>
+			<string>0370B374-A62C-4153-9B26-0E91439E508E</string>
 			<key>IDESourceControlWCCName</key>
 			<string>RFMathTextField</string>
 		</dict>
