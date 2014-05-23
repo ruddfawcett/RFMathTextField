@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'RFMathTextField'
-  s.version      = '1.2'
+  s.version      = '1.3'
   s.summary      = 'A simple validator/equation answerer.'
   s.description  = 'Could be used to prevent spam (an extra form step) or prevent users from making stupid decisions at stupid times, when they are not thinking clearly, and can not do simple math.'
   s.homepage     = 'https://github.com/ruddfawcett/RFMathTextField'
@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { 'Rudd Fawcett' => 'rudd.fawcett@gmail.com' }
   s.platform     = :ios, '7.0'
-  s.source       = { :git => 'https://github.com/ruddfawcett/RFMathTextField.git', :tag => 'v1.2' }
+  s.source       = { :git => 'https://github.com/ruddfawcett/RFMathTextField.git', :tag => 'v1.3' }
   s.source_files  = 'RFMathTextField/*'
   s.requires_arc = true
 end

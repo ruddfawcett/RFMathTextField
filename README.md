@@ -13,7 +13,7 @@ A simple validator/equation answerer.  Could be used to prevent spam (an extra f
 
 ```ruby
 platform :ios, '7.0'
-pod "RFMathTextField", "~> 1.1"
+pod "RFMathTextField", "~> 1.3"
 ```
 
 ### Installation without CocoaPods
